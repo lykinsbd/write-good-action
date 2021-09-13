@@ -6,7 +6,7 @@ This action lints Markdown files using [`write-good`](https://github.com/btford/
 
 ### `directory`
 
-Select a directory to search files to run `write-good` on. The default is ".", the current working directory.
+Select a directory containing files to evaluate with `write-good`. The default is ".", the current working directory.
 
 ## Outputs
 
@@ -20,7 +20,7 @@ Use with [`add-pr-comment`](https://github.com/marketplace/actions/add-pr-commen
 
 ## Example usage
 
-```
+```yaml
 on:
   push:
     branches:
@@ -52,4 +52,3 @@ jobs:
         repo-token-user-login: 'github-actions[bot]' # The user.login for temporary GitHub tokens
         allow-repeats: false # This is the default
 ```
-
